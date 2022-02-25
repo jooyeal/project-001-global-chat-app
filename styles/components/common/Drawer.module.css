@@ -1,0 +1,5 @@
+.container {
+  background-color: var(--gray900);
+  height: calc(100vh - 48px);
+  border-right: 0.25px solid var(--gray400);
+}

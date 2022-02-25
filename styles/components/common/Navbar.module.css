@@ -1,0 +1,34 @@
+.container {
+  height: 48px;
+  background-color: var(--warmGray900);
+  color: var(--gray200);
+  border-bottom: 0.25px solid var(--gray400);
+  display: flex;
+  padding: 0 100px 0 100px;
+  font-weight: bold;
+}
+
+.white {
+  background-color: var(--gray200);
+}
+
+.left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex: 1.5;
+  color: var(--gray400);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

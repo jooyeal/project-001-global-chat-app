@@ -1,0 +1,14 @@
+.container {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--warmGray900);
+  color: var(--gray500);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: var(--gray700);
+  color: var(--gray300);
+}

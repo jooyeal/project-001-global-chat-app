@@ -1,0 +1,4 @@
+.container {
+  background-color: var(--warmGray900);
+  height: calc(100vh - 48px);
+}
