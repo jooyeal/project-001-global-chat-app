@@ -8,13 +8,26 @@
 }
 
 .drawer {
-  flex: 1.5;
+  flex: 0.3;
+}
+
+.drawer_detail {
+  flex: 1;
+  background-color: var(--gray900);
 }
 
 .children {
+  height: calc(100vh - 48px);
   flex: 4;
   background-color: var(--warmGray900);
-  border-right: 0.25px solid var(--gray400);
+  border-right: 0.25px solid var(--gray800);
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.children::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .friends {

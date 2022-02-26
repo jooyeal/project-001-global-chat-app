@@ -1,0 +1,64 @@
+.container {
+  width: 500px;
+  border: 0.25px solid var(--gray800);
+}
+
+.top {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 0.25px solid var(--gray800);
+  gap: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gray300);
+}
+
+.profile_image {
+  border-radius: 50%;
+}
+
+.main {
+}
+
+.desc {
+  word-break: break-all;
+  color: var(--gray300);
+  padding: 8px;
+}
+
+.bottom {
+}
+
+.post_tool {
+  height: 45px;
+  padding-left: 20px;
+  border-bottom: 0.25px solid var(--gray800);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--gray400);
+}
+
+.comments {
+}
+
+.comment {
+  display: flex;
+  padding: 5px 20px 5px 20px;
+  align-items: center;
+}
+
+.comment_user {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--gray300);
+  margin-right: 20px;
+}
+
+.comment_desc {
+  font-size: 14px;
+  color: var(--gray300);
+  word-break: break-all;
+}

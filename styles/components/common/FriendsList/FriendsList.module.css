@@ -1,0 +1,16 @@
+.container {
+  padding: 10px;
+  background-color: var(--warmGray900);
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: var(--gray200);
+  font-weight: bold;
+  font-size: 18px;
+}

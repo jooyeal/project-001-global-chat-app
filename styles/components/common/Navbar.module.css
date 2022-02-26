@@ -2,7 +2,7 @@
   height: 48px;
   background-color: var(--warmGray900);
   color: var(--gray200);
-  border-bottom: 0.25px solid var(--gray400);
+  border-bottom: 0.25px solid var(--gray800);
   display: flex;
   padding: 0 100px 0 100px;
   font-weight: bold;

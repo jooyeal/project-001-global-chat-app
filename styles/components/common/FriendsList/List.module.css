@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--warmGray800);
+  color: var(--gray200);
+  gap: 20px;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: var(--warmGray600);
+}
+
+.status {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  background-color: var(--gray600);
+}
+
+.image {
+  border-radius: 50%;
+}

@@ -1,5 +1,19 @@
 .container {
-  background-color: var(--gray900);
+  background-color: var(--warmGray800);
   height: calc(100vh - 48px);
-  border-right: 0.25px solid var(--gray400);
+  border-right: 0.25px solid var(--gray800);
+}
+
+.list {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gray500);
+}
+
+.list:hover {
+  background-color: var(--warmGray700);
+  color: var(--gray300);
 }
