@@ -1,0 +1,58 @@
+.compBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.titleText{
+    display: flex;
+    flex-direction: column;
+    width: 150vh;
+}
+.loginBox {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+.formBox {
+    display: flex;   
+    height: 50vh;
+    width: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warmGray700);
+}
+.labelText {
+    color: var(--warmGray200);
+    margin-bottom: 4px;
+}
+.textBox {
+    background-color: var(--blueGray700);
+    box-sizing: border-box;
+    height: 40px;
+    width: 350px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.compLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+}
+.btn {
+    margin-top: 5px;
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+}
+.signUpBox {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
