@@ -2,6 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 import styles from "../styles/pages/Login.module.css";
 import { postLogin } from "../service/authApi";
 import { useAppDispatch } from "../hooks/storeHook";
+import { useRouter } from "next/router";
 
 type Props = {};
 
@@ -9,6 +10,7 @@ const login = (props: Props) => {
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
   const dispatch = useAppDispatch();
+  const router = useRouter();
 
   const onChangepw = (e: ChangeEvent<HTMLInputElement>) => {
     setPw(e.target.value);
@@ -19,7 +21,7 @@ const login = (props: Props) => {
   };
 
   const loginBtn = async () => {
-    dispatch(postLogin(email, pw));
+    dispatch(postLogin(email, pw, router));
   };
 
   return (
