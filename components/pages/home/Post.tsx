@@ -5,9 +5,12 @@ import Image from "next/image";
 import React from "react";
 import styles from "../../../styles/pages/home/Post.module.css";
 
-interface Props {}
+interface Props {
+  username: string;
+  desc: string;
+}
 
-export default function Post({}: Props) {
+export default function Post({ username, desc }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -18,12 +21,10 @@ export default function Post({}: Props) {
           height={37}
           layout="fixed"
         />
-        <p>username</p>
+        <p>{username}</p>
       </div>
       <div className={styles.main}>
-        <div className={styles.desc}>
-          oisjeiofjisoefkldslfkdsjkflskdlfjldsjfklsjdklfjskldjfklskldfjklsdjklfsjdklwiefjoewfjowejfiowejfioewjiofjewoifjewiofjweiofjewiofjio
-        </div>
+        <div className={styles.desc}>{desc}</div>
         <Image src="/assets/default_user.png" width={500} height={500} />
       </div>
       <div className={styles.bottom}>

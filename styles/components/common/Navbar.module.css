@@ -32,3 +32,19 @@
   align-items: center;
   gap: 10px;
 }
+
+.logout {
+  background-color: var(--warmGray900);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: var(--gray400);
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: var(--warmGray600);
+  color: var(--gray200);
+}
