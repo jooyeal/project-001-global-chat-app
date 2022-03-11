@@ -83,10 +83,9 @@ const Home = ({
           />
         }
         scrollableTarget="scrollableDiv"
-        style={{ display: "flex", flexDirection: "column", gap: "30px" }}
       >
         {selector.posts?.map((post: any, index) => (
-          <Post key={index} username={post.userId} desc={post.desc} />
+          <Post key={index} userName={post.userName} desc={post.desc} />
         ))}
       </InfiniteScroll>
     </div>

@@ -6,11 +6,11 @@ import React from "react";
 import styles from "../../../styles/pages/home/Post.module.css";
 
 interface Props {
-  username: string;
+  userName: string;
   desc: string;
 }
 
-export default function Post({ username, desc }: Props) {
+export default function Post({ userName, desc }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -21,7 +21,7 @@ export default function Post({ username, desc }: Props) {
           height={37}
           layout="fixed"
         />
-        <p>{username}</p>
+        <p>{userName}</p>
       </div>
       <div className={styles.main}>
         <div className={styles.desc}>{desc}</div>
