@@ -32,8 +32,14 @@ const postSlice = createSlice({
       state.isFetching = false;
       state.isError = true;
     },
+    postsClear: (state) => {
+      state.isFetching = false;
+      state.isError = false;
+      state.isLast = false;
+      state.posts = [];
+    },
   },
 });
 
-export const { fetchStart, fetchSuccess, fetchError } = postSlice.actions;
+export const { fetchStart, fetchSuccess, fetchError, postsClear } = postSlice.actions;
 export default postSlice.reducer;

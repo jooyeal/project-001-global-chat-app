@@ -1,5 +1,5 @@
 .container {
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   height: calc(100vh - 48px);
   display: flex;
   flex-direction: column;
@@ -12,4 +12,8 @@
 
 .container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
+}
+
+.infiniteScroll::-webkit-scrollbar {
+  display: none;
 }
