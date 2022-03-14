@@ -1,0 +1,44 @@
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: modalShow 0.2s;
+}
+
+.postingBox {
+  width: 600px;
+  height: 400px;
+  background-color: var(--warmGray800);
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.title {
+  flex: 9;
+}
+
+.close {
+  flex: 1;
+  cursor: pointer;
+}
+
+@keyframes modalShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
