@@ -26,6 +26,10 @@
   word-break: break-all;
   color: var(--gray300);
   padding: 8px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .bottom {
@@ -61,4 +65,8 @@
   font-size: 14px;
   color: var(--gray300);
   word-break: break-all;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
