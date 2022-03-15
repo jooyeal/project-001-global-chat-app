@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <Provider store={store}>
-      {router?.pathname == "/login" ? (
+      {router?.pathname == "/login" || router?.pathname == "/signUp" ? (
         <Component {...pageProps} />
       ) : (
         <Layout>
