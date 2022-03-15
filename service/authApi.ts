@@ -2,6 +2,8 @@ import {
   fetchStart,
   fetchSuccess,
   fetchError,
+  signUpStart,
+  signUpError,
 } from "../store/slices/authSlice";
 import { Dispatch } from "@reduxjs/toolkit";
 import { publicRequest } from "./baseApi";
@@ -27,6 +29,31 @@ export const postLogin = (
       router.push("/");
     } catch (err: any) {
       dispatch(fetchError());
+    }
+  };
+};
+
+export const postSignUp = (
+  email: string,
+  nickname: string,
+  password: string,
+  firstLanguage: string,
+  secondLanguage: string,
+  router: NextRouter
+) => {
+  return async (dispatch: Dispatch) => {
+    dispatch(signUpStart());
+
+    try {
+      const res = await publicRequest.post("/auth/signup", {
+        email,
+        nickname,
+        password,
+        firstLanguage,
+        secondLanguage,
+      });
+    } catch (err: any) {
+      dispatch(signUpError(err.response.data));
     }
   };
 };
